@@ -1,0 +1,153 @@
+ <!doctype html>
+ <html lang="en">
+   <head>
+     <title>Title</title>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Optional JavaScript -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <link href="css/agency.css" type="text/css" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+   </head>
+   <body class=" py-5 bk">
+       
+   <div class="card" id="booking">
+    <div class="heading p-4"><h1>Booking Methods </h1></div>
+<br/>
+    
+
+    <!--form-->
+<div class="p-4 card">
+  <div  class="light"  id="memberCount">
+    <div>
+      <h4>Billing Address</h4>
+      <br/>
+     
+    </div>
+    <div>
+      <h4>Payment</h4>
+    </div>
+  </div>
+<br/>
+    <form    name="myForm"   onsubmit="formvalidtion()" action="/confrm.html">
+      <div id="formHeading">
+        
+         <div class="  w-50">  
+          <span><b>Choose</b></span>
+          <br/>
+          <select required class="select">
+            <option>--Selete Your Room-- </option>
+            <option>Single Room</option>
+            <option>Duble Room</option>
+            <option>Deluxe Room</option>
+
+          </select>
+          <br/>
+          <br/>
+          <div id="formHeading">
+            <div>
+              <span><i class="fas fa-user-alt"></i> <b>Adult</b></span>
+              <br/>
+              <input  required class="w-100" type="number" value="0" />
+            </div>
+            <div class="mx-5">
+              <span><i class="fas fa-child"></i> <b>Kids</b></span>
+              <br/>
+              <input required class="w-100 " type="number" value="0"/>
+            </div>
+          </div>
+          <br/>
+            <span> <i class="fas fa-user-check"></i> <b> Check-In</b></span>
+            <br/>
+         
+            <input required class="w-75" type="text" placeholder="DD/MM/YY"/>
+            <br/>
+            <span><i class="fas fa-external-link-alt"></i>   <b> Check-Out</b></span>
+          <br/>
+            <input required class="w-75" type="text" placeholder="DD/MM/YY"/>
+            <br/>
+            <span><i class="fas fa-user"></i><b>Full-Name</b></span>
+            <br/>
+            <input required class="w-75" type="text" placeholder="Mr. Jhon"/>
+            <br/>
+            <span><i class="fas fa-envelope"></i><b> Email</b> </span>
+            <br/>
+            <input required class="w-75" type="text" placeholder="Azhar@exmaple.com"/>
+            <br/>
+            <span><i class="fas fa-map-marker-alt"></i> <b>Address</b> </span>
+          <br/>
+            <input required class="w-75" type="text" placeholder="27,Road Gazipura, Tongi"/>
+            <br/>
+            <span><i class="fas fa-city"></i> <b>City</b></span>
+            <br/>
+         
+            <input required class="w-75" type="text" placeholder="Gazipur"/>
+            <br/>
+            <div id="formHeading">
+              <div>
+                <span><i class="fas fa-flag-usa"></i> <b>State</b></span>
+                <input required type="text" placeholder="Dhaka"  />
+              </div>
+              <div class="mx-5">
+                <span><i class="far fa-file-archive"></i> <b>Zip</b></span>
+                <input required type="text" placeholder="1710" />
+              </div>
+            </div>
+        </div>
+
+        
+        
+        
+         <div class="  w-50">
+          <h6> Accepted Card </h6>
+          <div class="w-100" >
+           
+            <i   class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-visa"> Bkash</i>
+          </div>
+         <br/>
+           
+            <span>  <b>Name on Card</b></span>
+            <br/>
+            <input required class="w-75" type="text" placeholder="Mr. Jhon"/>
+            <br/>
+            <span><b>Credit card number</b></span><br/>
+            <input required class="w-75" type="text" placeholder="1111 - 1111- 111"/>
+            <br/>
+            <span> <b>Exp Month</b></span> <br/>
+            <input class="w-75" type="text" placeholder="DD/MM/YY"/>
+           <div id="formHeading" >
+             <div >
+              <span><b> Exp Year</b></span>
+              <input type="text"/ placeholder="2008">
+             </div>
+             <div class="mx-5">
+              <span> <b>CVV</b>  </span>
+              <input required type="text"/ placeholder="315" >
+             </div>
+           </div>
+           
+          </div>
+    
+      
+        </div>
+        <br/>
+        <br/>
+      <p id="show"></p>
+  <input class="sub p-2 w-100 h-25" type="submit" value="Submit">
+    
+     </form >
+    </div>
+   </div>
+   <script src="js/booking.js"></script>
+   </body>
+ </html>
